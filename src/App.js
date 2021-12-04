@@ -2,6 +2,8 @@ import './App.css';
 import List from './components/List';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Counter from './components/Counter';
+
 
 import React from 'react'
 class App extends React.Component{
@@ -63,9 +65,10 @@ class App extends React.Component{
   render(){
     return(
       <div>
-        <Header addTodo = {this.addTodo}></Header>
+        {/* <Header addTodo = {this.addTodo}></Header>
         <List todos={this.state.todoList} updateTodo = {this.updateTodo} deleteTodo={this.deleteTodo}></List>
-        <Footer todos={this.state.todoList} clearDone = {this.clearDone} handleCheckAll = {this.handleCheckAll}></Footer>
+        <Footer todos={this.state.todoList} clearDone = {this.clearDone} handleCheckAll = {this.handleCheckAll}></Footer> */}
+        <Counter/>
       </div>
     )
   }
